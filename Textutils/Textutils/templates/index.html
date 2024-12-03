@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utils</title>
+    <style>
+        body{
+            border:2px solid black;
+            position: relative;
+            top:30px;
+            left:90px;
+            display:flex;
+            padding:20px;
+            justify-content:center;
+            max-width:100vw;
+            max-height:100vh;
+            color:darkgoldenrod;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        #container{
+            display:block;
+            position:relative;
+            justify-content:center;
+            top:60px;
+            right:195px;
+            width:1000px;
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            cursor: pointer;
+            background-color: #333;
+            color: darkgoldenrod;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: gold;
+        }
+        input[type="radio"]{
+            margin-right: 5px;
+        }
+        h1{
+            position:absolute;
+            left:65px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the Text Utils Tool</h1>
+    <form id="container" action="/analyze" method="get">
+        <textarea name="text" placeholder="Enter text here"></textarea><br>
+
+        <label><input type="radio" name="action" value="uppercase"> Uppercase</label><br>
+        <label><input type="radio" name="action" value="lowercase"> Lowercase</label><br>
+        <label><input type="radio" name="action" value="removepunc"> Remove Punctuation</label><br>
+        <label><input type="radio" name="action" value="count"> Character Count</label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        alert("Hello!");
+    </script>
+</body>
+</html>
